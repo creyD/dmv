@@ -1,2 +1,3 @@
-# dmv
-Django Model Visualizer
+# Django Model Visualizer (DMV)
+
+## How to use?
