@@ -1,0 +1,14 @@
+# Virtual Env
+env/
+
+# Django Database File
+db.sqlite3
+
+# Django Static Folder
+static/
+
+# Python Cached Files
+__pycache__/
+
+# Apple File System Storage
+.DS_Store
