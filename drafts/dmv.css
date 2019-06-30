@@ -1,0 +1,41 @@
+#title_bar {
+	text-align: center;
+}
+
+.object{
+	height: auto;
+	width: 250px;
+	border: 1px dashed black;
+	float: left;
+}
+
+.object_header{
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.object_body{
+
+}
+
+.attribute{
+
+}
+
+.attribute button{
+	border: none;
+	background-color: white;
+	color: red;
+}
+
+.BTN_delete_object{
+	border: none;
+	background-color: white;
+	color: red;
+}
+
+.BTN_add_attrib{
+	border: none;
+	background-color: white;
+	color: lightgreen;
+}

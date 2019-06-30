@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Django Model Visualizer (DMV)</title>
+	<link rel="stylesheet" type="text/css" href="dmv.css">
+	<!-- Viewport for a pleasant mobile experience -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Charset for compatability and stability -->
+	<meta charset="utf-8">
+</head>
+<body>
+	<div id="title_bar">
+		<button onclick="addObject()" id="BTN_addObject">Add Object</button>
+		<button onclick="cls()" id="BTN_clearScreen">Clear Screen</button>
+		<button onclick="save_json()" id="BTN_save">Save</button>
+		<button onclick="load_json()" id="BTN_save">Load</button>
+		<button onclick="export_models()" id="BTN_save">Generate models.py</button>
+		<button onclick="import_models()" id="BTN_save">Load models.py</button>
+	</div>
+	<hr>
+	<div id="canvas">
+		<!-- Placeholder for visualisation -->
+	</div>
+	<script type="text/javascript" src="dmv.js"></script>
+</body>
+</html>
