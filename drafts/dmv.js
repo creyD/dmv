@@ -134,8 +134,39 @@ function cls(){
 	return true;
 }
 
-function save_json(){
+function convertToJSON(){
+	let canvas = document.getElementById('canvas').children;
+	let data = {};
 
+	for (let i = 0; i < canvas.length; i++) {
+		let attributes = {};
+		let attribs = document.getElementById(canvas[i].id + '_attribList').children;
+		for (let j = 0; j < attribs.length; j++){
+			attributes['o_' + i + '_a_' + j] = {
+				'type': document.getElementById('o_' + i + '_a_' + j + '_type').innerHTML,
+				'name': document.getElementById('o_' + i + '_a_' + j + '_name').innerHTML,
+			}
+		}
+		data['o_' + i] = {
+			'name': document.getElementById('o_' + i + '_title').innerHTML,
+			'attributes': attributes
+		};
+	}
+	return JSON.stringify(data);
+}
+
+function save_json(){
+	convertToJSON();
+	var element = document.createElement('a');
+	element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(convertToJSON()));
+	element.setAttribute('download', 'data_model.json');
+
+	element.style.display = 'none';
+	document.body.appendChild(element);
+
+	element.click();
+
+	document.body.removeChild(element);
 }
 
 function load_json(){
