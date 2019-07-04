@@ -13,12 +13,25 @@ function removeChildren(element) {
 	return true;
 }
 
+// Remove an object by it's ID
 function removeObject(id){
 	var element = document.getElementById(id);
     element.parentNode.removeChild(element);
     return true;
 }
 
+// Thanks to https://stackoverflow.com/questions/40195766/lowercase-all-letters-in-a-string-except-the-first-letter-and-capitalize-first-l
+function upperCaseFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+function lowerCaseAllWordsExceptFirstLetters(string) {
+    return string.replace(/\w\S*/g, function (word) {
+        return word.charAt(0) + word.slice(1).toLowerCase();
+    });
+}
+
+// Adds an attribute to an object
 function addAttribute(object_id){
 	let attribute_list = document.getElementById(object_id + '_attribList');
 	let attribute_count = attribute_list.childElementCount;
@@ -30,12 +43,12 @@ function addAttribute(object_id){
 	let type = document.createElement('span');
 	type.id = object_id + '_a_' + attribute_count + '_type';
 	type.innerHTML = 'TYPE';
-	type.onclick = function() { edit_element(this.id, 'Enter new attribute type:'); };
+	type.onclick = function() { edit_element(this.id, 'Enter new attribute type:', 'upperCase'); };
 
 	let span = document.createElement('span');
 	span.id = object_id + '_a_' + attribute_count + '_name';
-	span.innerHTML = 'Attribute ' + attribute_count;
-	span.onclick = function() { edit_element(this.id, 'Enter new attribute name:'); };
+	span.innerHTML = 'attribute_' + attribute_count;
+	span.onclick = function() { edit_element(this.id, 'Enter new attribute name:', 'lowerCase'); };
 
 	let deleteButton = document.createElement('button');
 	deleteButton.innerHTML = 'remove';
@@ -48,19 +61,29 @@ function addAttribute(object_id){
 	return true;
 }
 
-function edit_element(element_id, prompt_text) {
+// Edits text in a specific element
+function edit_element(element_id, prompt_text, style = 'default') {
 	let existing = document.getElementById(element_id);
 	let new_text = prompt(prompt_text, existing.innerHTML);
+	new_text = new_text.replace(/\s/g, '_');
 
 	if (new_text){
-		existing.innerHTML = new_text;
+		if (style === 'default'){
+			existing.innerHTML = new_text;
+		} else if (style === 'upperCase'){
+			existing.innerHTML = new_text.toUpperCase();
+		} else if (style === 'lowerCase'){
+			existing.innerHTML = new_text.toLowerCase();
+		} else if (style === 'firstUpper'){
+			existing.innerHTML = upperCaseFirstLetter(lowerCaseAllWordsExceptFirstLetters(new_text));
+		}
 		return true;
 	} else{
 		return false;
 	}	
 }
 
-// BUTTONS
+// BUTTON FUNCTIONALITY
 function addObject(){
 	let canvas = document.getElementById('canvas');
 
@@ -87,8 +110,8 @@ function addObject(){
 	// Create the heading
 	let heading = document.createElement('span');
 	heading.id = 'o_' + object_count + '_title';
-	heading.onclick = function() { edit_element(this.id, "Enter new object name:"); };
-	heading.innerHTML = 'OBJECT ' + object_count;
+	heading.onclick = function() { edit_element(this.id, "Enter new object name:", 'firstUpper'); };
+	heading.innerHTML = 'Object_' + object_count;
 	heading.setAttribute('class', 'object_header');
 	container.appendChild(heading);
 
