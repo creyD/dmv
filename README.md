@@ -30,7 +30,12 @@ In the main directory should only be the following folders and files:
 
 # How to contribute
 
+Before you write a feature or change a design element, please create a GitHub Issue
+and check in with others. Somebody else is possibly working on it already!
+
 - Step 1: Create a fork, start your work
+- Step 1.1: Please write clean and readable code
+- Step 1.2: Try to use as few libraries as possible but as much as you need
 - Step 2: Test your code properly
 - Step 3: Document your code (how it works and what others should use)
 - Step 3.1 (optional): You may add yourself to the 'Contributors' list
@@ -53,4 +58,4 @@ In the main directory should only be the following folders and files:
 
 # Contributors
 
-None so far.
+Nobody is listed here at the moment.
