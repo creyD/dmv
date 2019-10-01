@@ -4,7 +4,6 @@
 [![PRs](https://img.shields.io/github/issues-pr/creyD/dmv)](https://github.com/creyD/dmv/pulls)
 [![License](https://img.shields.io/github/license/creyD/dmv)](https://github.com/creyD/dmv/blob/master/LICENSE.md)
 [![Release](https://img.shields.io/github/v/release/creyD/dmv)](https://github.com/creyD/dmv/releases)
-[![Contributors](https://img.shields.io/github/contributors/creyD/dmv?color=green)](https://github.com/creyD/dmv/graphs/contributors)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8b8bc893a3a2466f9a4fe1fa9da952ca)](https://www.codacy.com/manual/creyD/dmv?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=creyD/dmv&amp;utm_campaign=Badge_Grade)
 
 ## Scope
