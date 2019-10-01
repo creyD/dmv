@@ -27,11 +27,15 @@ When this project goes into beta, a server will be provided to test everything.
 - docs/ -- Documentation separated for each folder in the `src/` directory
 - github/ -- Files for GitHub like Issue Templates
 
-# Contributors
+## How to contribute
+
+Please read the guide in 'CONTRIBUTING.md'! Thanks alot!
+
+## Contributors
 
 Nobody is listed here at the moment.
 
-# Future
+## Future
 
 Like mentioned before this project could be integrated in an electron app as it
 is mainly JavaScript based. Furthermore it could be provided as a Django module
