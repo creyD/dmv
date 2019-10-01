@@ -29,7 +29,7 @@ Thanks to all contributors and users!
 - drafts/ -- For drafting your solution (please don't create PRs for drafts)
 - src/ -- Source Code of the Django Model Visualizer
 - docs/ -- Documentation separated for each folder in the `src/` directory
-- github/ -- Files for GitHub like Issue Templates
+- github/ -- Files for GitHub like Issue Templates or the Code of Conduct
 
 ## How to contribute
 
