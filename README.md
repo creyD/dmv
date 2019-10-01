@@ -15,13 +15,17 @@ Electron application could be an option in the future.
 
 When this project goes into beta, a server will be provided to test everything.
 
+Thanks to all contributors and users!
+
 ## Folder Structure
 
+### Files
 - README.md -- Overview over the project
 - LICENSE.md -- License of all the code in this repository
 - CONTRIBUTING.md -- Please read this guide if you consider contributing to this project
 - .gitignore -- Files which git excludes
 
+### Folders
 - drafts/ -- For drafting your solution (please don't create PRs for drafts)
 - src/ -- Source Code of the Django Model Visualizer
 - docs/ -- Documentation separated for each folder in the `src/` directory
