@@ -4,6 +4,7 @@
 [![PRs](https://img.shields.io/github/issues-pr/creyD/dmv)](https://github.com/creyD/dmv/pulls)
 [![License](https://img.shields.io/github/license/creyD/dmv)](https://github.com/creyD/dmv/blob/master/LICENSE.md)
 [![Release](https://img.shields.io/github/v/release/creyD/dmv)](https://github.com/creyD/dmv/releases)
+[![CodeFactor](https://www.codefactor.io/repository/github/creyd/dmv/badge)](https://www.codefactor.io/repository/github/creyd/dmv)
 
 ## Scope
 
