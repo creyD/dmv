@@ -14,7 +14,7 @@ other hand it should also import the 'models.py' files and give a handy
 visualization.
 
 The tool could be used to interact with databases in general - but specifically
-with Django databases very easily. It could be written in JS, so one can host
+with Django databases very easily. It could be written in JS (node), so one can host
 a system if he wants to but everyone could use it fairly simple on a computer
 without internet access as JS can be executed by every browser. Furthermore an
 Electron application could be an option in the future.
