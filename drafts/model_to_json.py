@@ -19,7 +19,7 @@ ignore = False
 for line in file:
     if not line.strip().startswith('#') and len(line) > 1:
         if line.strip().startswith('class') and 'models' in line:
-            if new_class == False:
+            if not new_class:
                 new_class = True
                 current_model_name = line[6:-16]
             else:
@@ -35,10 +35,10 @@ for line in file:
                 new_attributes = {}
                 for attrib in attributes[1].split(','):
                     if '=' in attrib:
-                        bla = attrib.split('=')
-                        if bla[1].endswith(')'):
-                            bla[1] = bla[1][:-1]
-                        new_attributes[bla[0].strip()] = bla[1].strip()
+                        new_attribute = attrib.split('=')
+                        if new_attribute[1].endswith(')'):
+                            new_attribute[1] = new_attribute[1][:-1]
+                        new_attributes[new_attribute[0].strip()] = new_attribute[1].strip()
                     else:
                         new_attributes['foreign_reference'] = attrib
                 new_field['typ'] = attributes[0]
