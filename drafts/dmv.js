@@ -1,4 +1,3 @@
-"use strict";
 // GLOBAL VARIABLES
 var objectCount = 0;
 
@@ -129,7 +128,7 @@ function addObject(){
 function cls(){
 	let canvas = document.getElementById("canvas");
 	if (confirm("Do you really want to clear the screen?")){
-		canvas.innerHTML = ";
+		canvas.innerHTML = "";
 	}
 	return true;
 }
