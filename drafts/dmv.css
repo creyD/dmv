@@ -1,34 +1,34 @@
 #title_bar {
-	text-align: center;
+  text-align: center;
 }
 
-.object{
-	height: auto;
-	width: 250px;
-	border: 1px dashed black;
-	float: left;
-	margin: 2px 1% 2px 1%;
+.object {
+  height: auto;
+  width: 250px;
+  border: 1px dashed black;
+  float: left;
+  margin: 2px 1% 2px 1%;
 }
 
-.object_header{
-	font-size: 2em;
-	font-weight: bold;
+.object_header {
+  font-size: 2em;
+  font-weight: bold;
 }
 
-.attribute button{
-	border: none;
-	background-color: white;
-	color: red;
+.attribute button {
+  border: none;
+  background-color: white;
+  color: red;
 }
 
-.BTN_delete_object{
-	border: none;
-	background-color: white;
-	color: red;
+.BTN_delete_object {
+  border: none;
+  background-color: white;
+  color: red;
 }
 
-.BTN_add_attrib{
-	border: none;
-	background-color: white;
-	color: lightgreen;
+.BTN_add_attrib {
+  border: none;
+  background-color: white;
+  color: lightgreen;
 }
