@@ -18,7 +18,7 @@ and check in with others. Somebody else is possibly working on it already!
 This project is distributed under the MIT License! By creating a PR with your code
 it will fall under that license as well, please keep that in mind.
 
-# What should push
+# What you should push
 
 - Bug fixes
 - Feature improvements (please create an 'issue' first so all can share their ideas)
